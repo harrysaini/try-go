@@ -1,20 +1,20 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-func main() {
-	defer foo()
-	bar()
+// func main() {
+// 	defer foo()
+// 	bar()
 
-	fmt.Println("in main")
-}
+// 	fmt.Println("in main")
+// }
 
-func foo() {
-	fmt.Println("i am foo")
-}
+// func foo() {
+// 	fmt.Println("i am foo")
+// }
 
-func bar() {
-	fmt.Println("i am bar")
-}
+// func bar() {
+// 	fmt.Println("i am bar")
+// }
 
-// defer is used for cleanup
+// // defer is used for cleanup

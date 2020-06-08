@@ -63,8 +63,8 @@ type sedan struct {
 }
 
 type pedan struct {
-	v      vehicle
-	luxury bool
+	s    sedan
+	boss bool
 }
 
 func embeddedStructs() {
@@ -96,11 +96,18 @@ func embeddedStructs() {
 	fmt.Printf("%T\n", s)
 
 	sp := pedan{
-		luxury: false,
+		s: sedan{
+			vehicle: vehicle{
+				doors: 4,
+				color: "red",
+			},
+			luxury: true,
+		},
+		boss: false,
 	}
 
 	fmt.Printf("abc %T\t%v\n", sp, sp)
-	fmt.Println(sp.v)
+	fmt.Println(sp.s.luxury)
 
 	anonymousStruct(67)
 }
